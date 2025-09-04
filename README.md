@@ -1,1 +1,1 @@
-# weatherWidget
+# weather-widget
