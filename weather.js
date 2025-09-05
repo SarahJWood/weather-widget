@@ -1,3 +1,7 @@
+/*TODO
+-add sunrise/sunset
+-add windy conditions
+-add high/low*/
 // Conditions (Using WMO weather codes)
 function weatherCodeToGroup(code) {
     if (code === 0) return "Clear";
