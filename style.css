@@ -32,6 +32,7 @@ h1 {
     font-family: "Anonymous Pro 700", monospace;
     font-weight: bold;
     border: 50px solid #d5ebff;
+    overflow: hidden;
 }
 
 #weather-icon {

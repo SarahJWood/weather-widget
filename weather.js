@@ -81,3 +81,6 @@ themeToggle.addEventListener('change', () => {
         document.body.classList.add('sunrise');
     }
 });
+
+// Initial load
+updateWeather();
