@@ -71,14 +71,16 @@ const dayNum = today.getDate();
 document.getElementById("date").textContent = `${dayName}, ${monthName} ${dayNum}`;
 
 // Light/Dark Mode
+const widget = document.getElementById('widget');
+
 const themeToggle = document.getElementById('theme-toggle');
 themeToggle.addEventListener('change', () => {
     if (themeToggle.checked) {
-        document.body.classList.remove('sunrise');
-        document.body.classList.add('sunset');
+        widget.classList.remove('sunrise');
+        widget.classList.add('sunset');
     } else {
-        document.body.classList.remove('sunset');
-        document.body.classList.add('sunrise');
+        widget.classList.remove('sunset');
+        widget.classList.add('sunrise');
     }
 });
 

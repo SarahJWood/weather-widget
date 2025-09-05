@@ -1,18 +1,23 @@
 /* TODO:
 -change font sizes for each piece
--add background layer/add inner box
+-add background layer/add inner box WITHOUT using a border
+(need second div)
 */
 body {
+    background: #d5ebff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+#widget.sunrise {
     background: #fff9da;
     color: rgb(253, 144, 166);
 }
 
-body.sunrise {
-    background: #fff9da;
-    color: rgb(253, 144, 166);
-}
-
-body.sunset {
+#widget.sunset {
     background: #254a8d;
     color: rgb(255, 225, 173);
 }
@@ -27,12 +32,13 @@ h1 {
     padding: 1rem;
     border-radius: 12px;
     /* rounded edges */
-    box-shadow: 0 2px 8px rgba(150, 150, 150, 0.2);
+    box-shadow: 0 4px 14px rgba(85, 85, 85, 0.2);
     text-align: center;
     font-family: "Anonymous Pro 700", monospace;
     font-weight: bold;
-    border: 50px solid #d5ebff;
     overflow: hidden;
+    background: #fff9da;
+    color: rgb(253, 144, 166);
 }
 
 #weather-icon {
