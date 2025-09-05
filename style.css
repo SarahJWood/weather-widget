@@ -1,11 +1,25 @@
+/* TODO:
+-change font sizes for each piece
+-add backgroung layer/add inner box
+*/
+body {
+    background: #fff9da;
+    color: rgb(253, 144, 166);
+}
+
 body.sunrise {
-    background: #ffdae6;
-    color: rgb(219, 227, 255);
+    background: #fff9da;
+    color: rgb(253, 144, 166);
 }
 
 body.sunset {
-    background: #ffa8bf;
-    color: rgb(255, 231, 152);
+    background: #254a8d;
+    color: rgb(213, 199, 253);
+}
+
+h1 {
+    font-family: "Libertinus Keyboard", sans-serif;
+
 }
 
 #widget {
@@ -13,7 +27,8 @@ body.sunset {
     padding: 1rem;
     border-radius: 12px;
     /* rounded edges */
-    box-shadow: 0 2px 8px rgba(255, 190, 190, 0.2);
+    box-shadow: 0 2px 8px rgba(150, 150, 150, 0.2);
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Anonymous Pro 700", monospace;
+
 }

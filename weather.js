@@ -1,8 +1,11 @@
-// Conditions
+// Conditions (Using WMO weather codes)
 function weatherCodeToGroup(code) {
     if (code === 0) return "Clear";
     if ((code === 1) || (code === 2)) {
         return "Partially Cloudy";
+    }
+    if ([3, 45, 48].includes(code)) {
+        return "Cloudy";
     }
     if ([51, 53, 55, 61, 63, 65, 80, 81, 82, 95, 96, 99].includes(code)) {
         return "Raining";
@@ -10,15 +13,18 @@ function weatherCodeToGroup(code) {
     if ([71, 73, 75, 77, 85, 86].includes(code)) {
         return "Snowing";
     }
+    if (code == 66 || code == 67) {
+        return "Freezing Rain (yikes!)";
+    }
     return "Unkown (uh oh)";
 }
 
 // Minneapolis's location
 const lat = 44.9778;
-const long = 93.2650;
+const long = -93.2650;
 
 // Weather API
-const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${long}`
+const url = `https://api.open-meteo.com/v1/forecast?latitude=${lat}&longitude=${long}&current_weather=true`
 
 // Connect & fetch temp/conditions
 fetch(url)
@@ -68,6 +74,6 @@ themeToggle.addEventListener('change', () => {
         document.body.classList.add('sunset');
     } else {
         document.body.classList.remove('sunset');
-        document.body.classList.add('sunsrise');
+        document.body.classList.add('sunrise');
     }
 });

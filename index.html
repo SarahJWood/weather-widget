@@ -5,13 +5,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather Widget</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:ital,wght@0,400;0,700;1,400;1,700&family=Libertinus+Keyboard&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <div id="widget">
+        <h1>Weather</h1>
         <div id="date"></div>
-        <div id="weather-icon" alt="Weather icon"></div>
+        <img id="weather-icon" alt="Weather icon" />
         <div id="temperature"></div>
         <div id="description"></div>
         <label>
@@ -19,4 +25,7 @@
             <input type="checkbox" id="theme-toggle">
         </label>
     </div>
+    <script src="weather.js"></script>
 </body>
+
+</html>
