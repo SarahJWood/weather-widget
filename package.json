@@ -1,0 +1,23 @@
+{
+  "name": "weather_widget",
+  "version": "1.0.0",
+  "description": "",
+  "main": "weather.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SarahJWood/weather-widget.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SarahJWood/weather-widget/issues"
+  },
+  "homepage": "https://github.com/SarahJWood/weather-widget#readme",
+  "devDependencies": {
+    "electron": "^38.0.0"
+  }
+}

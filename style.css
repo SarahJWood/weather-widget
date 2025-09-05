@@ -41,6 +41,17 @@ h1 {
     display: block;
 }
 
+.toggle-container {
+    margin-top: 1rem;
+    /* space from above */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    box-sizing: border-box;
+    /* space btwn toggle and label */
+}
+
 /* Toggle Switch */
 .switch {
     position: relative;
